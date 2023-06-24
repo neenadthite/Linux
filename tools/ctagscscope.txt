@@ -3,7 +3,7 @@
 1. Output the paths of the files to cscope file
 linux_commands/c_codes$ find . -name "*.c" -o -name "*.cpp" -o -name ".*h" -o -name "*.hpp" > cscope.files
 
-2. Create csope database
+2. Create cscope database
 linux_commands/c_codes$ cscope -q -R -b -i cscope.files
 
 3. Open cscope
