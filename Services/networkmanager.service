@@ -1,0 +1,17 @@
+[Unit]
+Description= Network montior init script
+#After= startup.service 
+
+[Service]
+ExecStart=/usr/bin/network_hopping.sh
+StandardOutput=journal
+StandardError=journal
+#SyslogIdentifier=NetworkManager
+Type=simple
+TimeoutSec=0
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,118 @@
+## cscope ##
+
+1. Output the paths of the files to cscope file
+linux_commands/c_codes$ find . -name "*.c" -o -name "*.cpp" -o -name ".*h" -o -name "*.hpp" > cscope.files
+
+2. Create csope database
+linux_commands/c_codes$ cscope -q -R -b -i cscope.files
+
+3. Open cscope
+linux_commands/c_codes$ cscope -d
+
+4. Search using the following available options
+
+linux_commands/c_codes$ cscope -d
+Cscope version 15.9                                                                                                                 Press the ? key for help
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Find this C symbol:
+Find this global definition:
+Find functions called by this function:
+Find functions calling this function:
+Find this text string:
+Change this text string:
+Find this egrep pattern:
+Find this file:
+Find files #including this file:
+Find assignments to this symbol:
+
+5. Enter the desired file using the number or alphabet shown infornt of the File name
+Functions called by this function: main
+
+  File                      Function  Line
+0 code14_arraysubset.c      scanf     14 scanf("%d",&cnt2);
+1 code14_arraysubset.c      printf    17 printf("Enter element %d: ",j+1);
+2 code14_arraysubset.c      scanf     18 scanf("%d",&arr2[j]);
+3 code14_arraysubset.c      printf    31 printf("\nArray2 is sub-set of Array1");
+4 code14_arraysubset.c      printf    33 printf("\nArray2 is not sub-set of Array1");
+5 code15_unionintersection. printf     5 printf("\nEnter count for larger array: ");
+6 code15_unionintersection. scanf      6 scanf("%d",&cnt1);
+7 code15_unionintersection. printf     9 printf("\nEnter element %d: ",i+1);
+8 code15_unionintersection. scanf     10 scanf("%d",&arr1[i]);
+9 code15_unionintersection. printf    12 printf("\nEnter count for smaller array: ");
+a code15_unionintersection. scanf     13 scanf("%d",&cnt2);
+b code15_unionintersection. printf    16 printf("\nEnter element %d: ",j+1);
+c code15_unionintersection. scanf     17 scanf("%d",&arr2[j]);
+d code15_unionintersection. printf    33 printf("\nIntersection array is: ");
+e code15_unionintersection. printf    36 printf("%d\t",arr3[n]);
+f code15_unionintersection. printf    38 printf("\nUnion is: ");
+g code15_unionintersection. printf    40 printf("%d\t",arr1[o]);
+h code15_unionintersection. printf    50 printf("%d\t",arr2[p]);
+i code16_rotate.c           printf     5 printf("\nEnter no. of elements in array: ");
+j code16_rotate.c           scanf      6 scanf("%d",&count);
+k code16_rotate.c           printf     9 printf("\nEnter element %d: ",i+1);
+l code16_rotate.c           scanf     10 scanf("%d",&a[i]);
+m code16_rotate.c           printf    12 printf("\nEnter shift value: ");
+n code16_rotate.c           scanf     13 scanf("%d",&rt);
+o code16_rotate.c           printf    18 printf("\nRotated array is: ");
+p code16_rotate.c           printf    21 printf("%d\t",a[l]);
+q code1_Table.c             printf     9 printf("Enter the number: ");
+r code1_Table.c             scanf     10 scanf("%d",&number);
+
+* Lines 29-57 of 124, 68 more - press the space bar to display more *
+Find this C symbol:
+Find this global definition:
+Find functions called by this function:
+Find functions calling this function:
+Find this text string:
+Change this text string:
+Find this egrep pattern:
+Find this file:
+Find files #including this file:
+Find assignments to this symbol:
+
+6. Exit
+a) Press :q! to exit the file 
+b) Tab to carry on searching
+c) Ctrl + d to exit
+
+## ctags ##
+ 1. Create ctags
+ linux_commands/c_codes$ ctags -R *
+ 
+ 2. Open Vi or Vim
+ Use ctrl+] and ctrl+T to traverse between the tag
+ You can also use :tn and :tp to traverse between the tag occurences
+ 
+ 3. Use :ts <tagname> to list out the occurence of the tag. Then select the number desired number to traverse the that line
+ 
