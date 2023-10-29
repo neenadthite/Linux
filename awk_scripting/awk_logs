@@ -31,4 +31,14 @@ git_neenad/Linux_basics/awk_scripting (main)r
 $ cat details.txt | grep "manager\b" | awk '{print $3}'
 1542
 
+git_neenad/Linux_basics/awk_scripting (main)
+$ cat test.txt
+Lary XYZ
+Office location Athens
+RegistrationID 1019810/87
+Designation Developer
 
+6. Use 'cut' command to ignore characters after a specific match
+git_neenad/Linux_basics/awk_scripting (main)
+$ cat test.txt | grep "RegistrationID" | awk '{print $2}' | cut -d/ -f1
+1019810
