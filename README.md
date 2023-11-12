@@ -3,3 +3,4 @@ Services -> networkmanagement.service is created which runs the network_hopping.
 tools -> currently this contains document regarding usage of cscope and ctags commands to traverse betweeen function definations, calls, variables etc.  
 awk_scripting -> contains basic examples of using awk commands and their usage combination with linux commands
 shell_scripting -> few examples on using bash scripts
+digitalclock.sh -> displays the current time in DD:MM:SS format continously
