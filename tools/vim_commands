@@ -3,3 +3,7 @@
 
 #To undo last change
 press ESC then u
+
+#To indent lines right or left
+press ESC then 'total lines count' then '<<' for left or 'total lines count' then '>>' for right
+ex. "5 >>" to shift five lines right 
