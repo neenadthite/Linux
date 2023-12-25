@@ -1,2 +1,5 @@
 #To replace all occurence in a file:
 :%s/original_phrase/new_phrase/g
+
+#To undo last change
+press ESC then u
